@@ -5,6 +5,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.retrievers import WikipediaRetriever
 from config import *
+import wikipedia
 
 class Wiki:
     def __init__(self):

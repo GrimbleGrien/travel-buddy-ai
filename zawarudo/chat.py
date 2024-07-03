@@ -3,7 +3,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.llms import HuggingFaceEndpoint
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
-from config import *
+from config import api_token,repo_id,task
 
 
 class Chat:
