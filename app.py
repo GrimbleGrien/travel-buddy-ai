@@ -7,10 +7,11 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
 # Get the API token from environment variable
-api_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+# api_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+api_token = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
 # Define the repository ID and task
 repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
